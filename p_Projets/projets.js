@@ -22,5 +22,5 @@ document.addEventListener("DOMContentLoaded", function(event) {
 		lightBox.SwitchVisibility();
 	});
 
-	
+	//comment
 });
