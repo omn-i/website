@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	ProgressBar.getInstance(document.getElementById('ProgressBar_secondeVersion')).setValue(100);
 
 	lightBox = LightBox.getInstance(document.getElementsByClassName('LightBox')[0]);
-	GetPngPathFromDirectory('/skoma/images/demo', function(images) {
+	GetPngFromDirectory('/skoma/images/demo', function(images) {
 		lightBox.setImages(images);
 	});
 	document.getElementById('demonstration').addEventListener('click', function() {

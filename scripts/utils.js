@@ -240,7 +240,7 @@ function GetImageColored(callback, url, color = DEFAULT_ICON_COLOR) {
 	}
 }
 
-function GetPngPathFromDirectory(path_directory, callback) {
+function GetPngFromDirectory(path_directory, callback) {
 	if (path_directory.constructor !== String && path_directory.length === 0) {
 		return;
 	}
@@ -250,7 +250,7 @@ function GetPngPathFromDirectory(path_directory, callback) {
 	GetPngPathFromDirectory_intern(path_directory, callback, new Array(), 0);
 }
 
-function GetPngPathFromDirectory_intern(path_directory, callback, images, index) {
+function GetPngFromDirectory_intern(path_directory, callback, images, index) {
 	var image = new Image(), event_load, event_error;
 	var removeEventListener = function() {
 		image.removeEventListener('load', event_load, true);
