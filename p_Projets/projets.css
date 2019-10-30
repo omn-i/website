@@ -1,0 +1,148 @@
+#main {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: flex-start;
+    align-content: flex-start;
+}
+
+#main_marge_left {
+	flex-grow: 0.15;
+}
+
+#main_marge_right {
+	flex-grow: 1;
+}
+
+#contenu {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: flex-start;
+    align-content: flex-start;
+    margin: 42.5px 5px 20px 5px;
+    max-width: 700px;
+}
+
+.sous_groupe {
+	width: 100%;
+	padding: 12.5px 1.3vw 25px 1.3vw !important;
+}
+
+.nom_projet {
+	font-family: "Roboto Condensed";
+	font-size: 22px;
+}
+
+.description_projet {
+	margin-top: 20px;
+	margin-bottom: 15px;
+	line-height: 1.5;
+	font-size: 18px;
+}
+
+#description_schema {
+	margin-top: 17.5px;
+	margin-bottom: 15px;
+	font-size: 16px;
+	font-family: "Roboto Thin";
+}
+
+#img_schema {
+	width: 100%;
+	max-width: 685px;
+}
+
+.version_number {
+	margin-top: 50px;
+	margin-bottom: 10px;
+	font-family: "Roboto Condensed";
+	font-size: 20px;
+}
+
+#titre_premiereVersion {
+	padding-top: 5px;
+}
+
+.version_ProgressBar {
+	max-width: 150px;
+}
+
+.extra_info_ProgressBar {
+	margin-left: 2px;
+	margin-top: 2px;
+	font-size: 13.25px;
+	font-family: "Roboto Thin";
+}
+
+.problemes_titre {
+	font-size: 17px;
+	margin: 25px 0px 22.5px 0px;
+	text-decoration: underline;
+	font-family: "Roboto LightItalic"
+}
+
+.problemes_tab {
+	list-style-position: inside;
+	list-style-type: disc;
+	margin: 0px 1.3vw;
+}
+
+.problemes_tab li {
+	margin: 10px 0px;
+	line-height: 1.5;
+}
+
+.demo_titre {
+	margin-top: 25px;
+	margin-bottom: 10px;
+	font-family: "Roboto Condensed";
+	font-size: 20px;
+}
+
+.demo_description {
+	margin-bottom: 20px;
+	font-size: 16.8px;
+	font-family: "Roboto Thin";
+}
+
+#demonstration {
+	position: relative;
+	max-width: 600px;
+	background: transparent;
+	cursor: pointer;
+}
+
+#conteneur_img_demo {
+	position: relative;
+	padding: 30px 30px 30px 0px;
+	width: calc(100% - 30px);
+}
+
+#img_demo_pc {
+	width: 100%;
+	height: auto;
+}
+
+#img_demo_mobile {
+	width: 25%;
+	height: auto;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+
+#img_go_into_demonstration {
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	right: 0;
+	top: 0;
+}
+
+#ProgressBar_secondeVersion .ProgressBar_bar_interieur {
+	background-color: #74ad71;
+}

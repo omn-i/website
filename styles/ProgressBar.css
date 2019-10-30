@@ -1,0 +1,50 @@
+.ProgressBar {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: stretch;
+	min-width: 80px;
+	min-height: 10px;
+}
+
+.ProgressBar_info {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+}
+
+.ProgressBar_bar {
+	flex-grow: 1;
+	background: #4a4c4f;
+}
+
+.ProgressBar_bar_interieur_conteneur {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	border-radius: 1.5px;
+}
+
+.ProgressBar_bar_interieur {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #a7c1cf;
+	background-image: url("/skoma/images/decoupe.png");
+	background-repeat: repeat;
+    background-size: contain;
+}
+
+.ProgressBar, .ProgressBar_bar {
+	overflow: hidden;
+	border-radius: 3px;
+}
+
+.ProgressBar_info_pourcentage {
+	font-size: 12px;
+	margin-left: 7.5px;
+}

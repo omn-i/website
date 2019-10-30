@@ -1,0 +1,14 @@
+<footer>
+</footer>
+<svg height="0" xmlns="http://www.w3.org/2000/svg">
+    <filter id="drop-shadow">
+        <feGaussianBlur in="SourceAlpha" stdDeviation="1.1"/>
+        <feOffset dx="1.5" dy="1.5" result="offsetblur"/>
+        <feFlood flood-color="rgba(0, 0, 0, 0.15)"/>
+        <feComposite in2="offsetblur" operator="in"/>
+        <feMerge>
+            <feMergeNode/>
+            <feMergeNode in="SourceGraphic"/>
+        </feMerge>
+    </filter>
+</svg>
