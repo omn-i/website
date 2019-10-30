@@ -21,6 +21,4 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	document.getElementById('demonstration').addEventListener('click', function() {
 		lightBox.SwitchVisibility();
 	});
-	
-	//test
 });
