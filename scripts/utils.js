@@ -42,14 +42,18 @@ function SelectionnerMenuPrincipal(nomItemMenu) {
 }
 
 function ScrollWindowSnap(isMonter) {
-	var height = window.innerHeight ||
-		document.documentElement.clientHeight ||
-		document.getElementsByTagName('body')[0].clientHeight;
-	document.getElementsByClassName('scroll_snap')[0].scroll({
-		top: isMonter ? -height : height, 
-		left: 0, 
-		behavior: 'smooth',
-	});
+	var scroll_snap = document.getElementsByClassName('scroll_snap');
+	if (scroll_snap.length > 0) {
+		scroll_snap = scroll_snap[0];
+		var height = window.innerHeight ||
+			document.documentElement.clientHeight ||
+			document.getElementsByTagName('body')[0].clientHeight;
+		scroll_snap.scroll({
+			top: isMonter ? -height : height, 
+			left: 0, 
+			behavior: 'smooth',
+		});
+	}
 	ClearSelection();
 }
 
