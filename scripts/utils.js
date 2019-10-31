@@ -247,7 +247,7 @@ function GetPngFromDirectory(path_directory, callback) {
 	if (path_directory.slice(-1) !== '/') {
 		path_directory += '/';
 	}
-	GetPngPathFromDirectory_intern(path_directory, callback, new Array(), 0);
+	GetPngFromDirectory_intern(path_directory, callback, new Array(), 0);
 }
 
 function GetPngFromDirectory_intern(path_directory, callback, images, index) {
@@ -259,7 +259,7 @@ function GetPngFromDirectory_intern(path_directory, callback, images, index) {
 	event_load = function() {
 		removeEventListener();
 		images.push(image);
-		GetPngPathFromDirectory_intern(path_directory, callback, images, ++index);
+		GetPngFromDirectory_intern(path_directory, callback, images, ++index);
 	};
 	event_error = function() {
 		removeEventListener();
