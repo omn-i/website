@@ -1,9 +1,3 @@
-body {
-	padding: 0px;
-	width: 100vw;
-	min-height: 100vh;
-}
-
 .page_scroll_snap_main {
 	display: flex;
 	flex-direction: column;

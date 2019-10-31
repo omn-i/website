@@ -10,19 +10,21 @@
 		<script src="contact.js"></script>
 		<!--<link rel="icon" type="image/png" href="/skoma/images/favicon.png" />-->
 	</head>
-	<body>
-		<div class="page_scroll_snap">
-			<?php include("../header.html"); ?>
-			<div class="page_scroll_snap_main">
-				<div id="contenu">
-					<div id="Social_conteneur">
-						<div id="Social_gmail" class="Social Social_affichage"></div>
-						<div id="Social_protonmail" class="Social Social_affichage"></div>
-						<div id="Social_github" class="Social Social_lien"></div>
+	<body class="body_clean">
+		<div class="scroll_snap">
+			<div class="page_scroll_snap">
+				<?php include("../header.html"); ?>
+				<div class="page_scroll_snap_main">
+					<div id="contenu">
+						<div id="Social_conteneur">
+							<div id="Social_gmail" class="Social Social_affichage"></div>
+							<div id="Social_protonmail" class="Social Social_affichage"></div>
+							<div id="Social_github" class="Social Social_lien"></div>
+						</div>
 					</div>
 				</div>
+				<?php include("../footer.html"); ?>
 			</div>
-			<?php include("../footer.html"); ?>
 		</div>
 	</body>
 </html>

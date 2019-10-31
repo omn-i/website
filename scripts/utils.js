@@ -45,7 +45,7 @@ function ScrollWindowSnap(isMonter) {
 	var height = window.innerHeight ||
 		document.documentElement.clientHeight ||
 		document.getElementsByTagName('body')[0].clientHeight;
-	window.scroll({
+	document.getElementsByClassName('scroll_snap')[0].scroll({
 		top: isMonter ? -height : height, 
 		left: 0, 
 		behavior: 'smooth',

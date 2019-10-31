@@ -1,7 +1,4 @@
-body {
-	padding: 0px;
-	width: 100vw;
-	min-height: 100vh;
+.scroll_snap {
 	scroll-snap-type: y mandatory;
 }
 

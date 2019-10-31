@@ -39,6 +39,49 @@ html {
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#413c45', endColorstr='#5a5d73', GradientType=1 );
 }
 
+body {
+	scroll-behavior: smooth;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	padding: 25px 35px;
+	width: calc(100vw - 35px * 2);
+	min-height: calc(100vh - 25px * 2);
+	height: auto;
+}
+
+.body_clean {
+	padding: 0px;
+	width: 100vw;
+	min-height: 100vh;
+	overflow-y: hidden;
+}
+
+.scroll_snap {
+	scroll-behavior: smooth;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	width: 100vw;
+	height: 100vh;
+}
+
+.page_scroll_snap {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: flex-start;
+    align-content: flex-start;
+	padding: 25px 35px;
+	width: calc(100vw - 35px * 2);
+	min-height: calc(100vh - 25px * 2);
+	scroll-snap-align: start;
+}
+
+.page_scroll_snap_main {
+	width: 100%;
+	flex-grow: 1;
+}
+
 #null_place {
 	visibility: collapse;
 }
@@ -60,34 +103,6 @@ html {
     filter: url(#drop-shadow);
     -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
     filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
-}
-
-.page_scroll_snap {
-	display: flex;
-	flex-direction: column;
-	flex-wrap: nowrap;
-	justify-content: flex-start;
-	align-items: flex-start;
-    align-content: flex-start;
-	padding: 25px 35px;
-	width: calc(100vw - 35px * 2);
-	min-height: calc(100vh - 25px * 2);
-	scroll-snap-align: start;
-}
-
-.page_scroll_snap_main {
-	width: 100%;
-	flex-grow: 1;
-}
-
-body {
-	position: relative;
-	scroll-behavior: smooth;
-	overflow-y: scroll;
-	overflow-x: hidden;
-	padding: 25px 35px;
-	width: calc(100vw - 35px * 2);
-	min-height: calc(100vh - 25px * 2);
 }
 
 a {

@@ -10,24 +10,26 @@
 		<script src="acceuil.js"></script>
 		<!--<link rel="icon" type="image/png" href="/skoma/images/favicon.png" />-->
 	</head>
-	<body>
-		<div class="page_scroll_snap">
-			<?php include("../header.html"); ?>
-			<div class="page_scroll_snap_main">
-				<p id="description">Développeur Web, Logiciel, FullStack</p>
-				<button id="button_consulter" onclick="onclick_button_consulter()">Consulter</button>
-			</div>
-			<?php include("../footer.html"); ?>
-		</div>
-		<div class="page_scroll_snap">
-			<div class="page_scroll_snap_main">
-				<div id="presentation_conteneur">
-					<div id="presentation_header">Bonjour !</div>
-					<div id="presentation">Je m'appelle Lucas, j'ai 22 ans, dernièrement j'ai développé une bibliothèque permettant d'éditer dynamiquement différents objets, en y incluant notamment un gestionnaire de concurence inter-utilisateurs. Par la suite, j'ai utilisé cette bibliothèque dans sa première version pour le développement d'une application mobile.</div>
+	<body class="body_clean">
+		<div class="scroll_snap">
+			<div class="page_scroll_snap">
+				<?php include("../header.html"); ?>
+				<div class="page_scroll_snap_main">
+					<p id="description">Développeur Web, Logiciel, FullStack</p>
+					<button id="button_consulter" onclick="onclick_button_consulter()">Consulter</button>
 				</div>
-				<div id="conteneur_boutons_menu">
-					<button onclick="onclick_button_acceuil()">Acceuil</button>
-					<a class="nav_item" href="/skoma/p_Projets/projets.php"><button>Projets</button></a>
+				<?php include("../footer.html"); ?>
+			</div>
+			<div class="page_scroll_snap">
+				<div class="page_scroll_snap_main">
+					<div id="presentation_conteneur">
+						<div id="presentation_header">Bonjour !</div>
+						<div id="presentation">Je m'appelle Lucas, j'ai 22 ans, dernièrement j'ai développé une bibliothèque permettant d'éditer dynamiquement différents objets, en y incluant notamment un gestionnaire de concurence inter-utilisateurs. Par la suite, j'ai utilisé cette bibliothèque dans sa première version pour le développement d'une application mobile.</div>
+					</div>
+					<div id="conteneur_boutons_menu">
+						<button onclick="onclick_button_acceuil()">Acceuil</button>
+						<a class="nav_item" href="/skoma/p_Projets/projets.php"><button>Projets</button></a>
+					</div>
 				</div>
 			</div>
 		</div>
