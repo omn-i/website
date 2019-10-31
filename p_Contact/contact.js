@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	social = socialManager.getByElement(document.getElementById('Social_github'));
 	social.setTitre('GITHUB');
 	social.setIcone('/skoma/images/github.png');
-	social.setLien('https://github.com/omn-i');
+	social.setLien('https://github.com/omn-i/website');
 });
 
 
