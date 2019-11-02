@@ -68,7 +68,7 @@ var lightBoxManager__ = new LightBoxManager();
 
 class LightBox {
 	element;
-	#images;
+	#paths;
 	#index = -1;
 	#el_image;
 	#el_count;
@@ -122,18 +122,18 @@ class LightBox {
 		element.appendChild(enfant);
 	}
 
-	setImages(images) {
-		this.#images = new Array();
-		if (Array.isArray(images)) {
-			for (var i = 0, n = images.length; i < n; i++) {
-				this.#images.push(images[i]);
+	setPaths(paths) {
+		this.#paths = new Array();
+		if (Array.isArray(paths)) {
+			for (var i = 0, n = paths.length; i < n; i++) {
+				this.#paths.push(paths[i]);
 			}
 		}
 		this.DeplacerVisualiseur(0);
 	}
 
 	DeplacerVisualiseur(newIndex) {
-		var length = this.#images.length;
+		var length = this.#paths.length;
 		var isArrayVide = length === 0;
 		if (isArrayVide) {
 			this.#index = 0;
@@ -150,7 +150,7 @@ class LightBox {
 				return;
 			}
 			this.#index = newIndex;
-			this.#el_image.src = this.#images[newIndex].src;
+			this.#el_image.src = this.#paths[newIndex];
 		}
 		this.#el_count.innerHTML = isArrayVide ?
 			'0/0' :

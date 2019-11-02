@@ -2,7 +2,7 @@ const TEXT_CONSULTER = 'Consulter';
 
 var socialManager;
 
-document.addEventListener("DOMContentLoaded", function(event) {
+document.addEventListener('DOMContentLoaded', function(event) {
 	loaded('CONTACT');
 
 	socialManager = new SocialManager();

@@ -244,32 +244,42 @@ function GetImageColored(callback, url, color = DEFAULT_ICON_COLOR) {
 	}
 }
 
-function GetPngFromDirectory(path_directory, callback) {
+function GetPngPathsFromDirectory(path_directory, callback, putInCache = false) {
 	if (path_directory.constructor !== String && path_directory.length === 0) {
 		return;
 	}
 	if (path_directory.slice(-1) !== '/') {
 		path_directory += '/';
 	}
-	GetPngFromDirectory_intern(path_directory, callback, new Array(), 0);
+	GetPngPathsFromDirectory_intern(path_directory, callback, new Array(), 0, putInCache === true);
 }
 
-function GetPngFromDirectory_intern(path_directory, callback, images, index) {
-	var image = new Image(), event_load, event_error;
-	var removeEventListener = function() {
-		image.removeEventListener('load', event_load, true);
-		image.removeEventListener('error', event_error, true);
+function GetPngPathsFromDirectory_intern(path_directory, callback, paths, index, putInCache) {
+	var xhttp = new XMLHttpRequest();
+	var removeEventListener, event_load, event_error;
+	var path = path_directory + index.toString() + '.png';
+	removeEventListener = function() {
+		xhttp.removeEventListener('readystatechange', event_load, true);
+		xhttp.removeEventListener('error', event_error, true);
 	};
 	event_load = function() {
-		removeEventListener();
-		images.push(image);
-		GetPngFromDirectory_intern(path_directory, callback, images, ++index);
+		if (xhttp.readyState === 4) {
+			removeEventListener();
+			if (xhttp.status === 200) {
+				paths.push(path);
+				GetPngPathsFromDirectory_intern(path_directory, callback, paths, ++index, putInCache);
+			}
+			else {
+				callback(paths);
+			}
+		}
 	};
 	event_error = function() {
 		removeEventListener();
-		callback(images);
+		callback(paths);
 	};
-	image.addEventListener('load', event_load, true);
-	image.addEventListener('error', event_error, true);
-	image.src = path_directory + index.toString() + '.png';
+	xhttp.addEventListener('readystatechange', event_load, true);
+	xhttp.addEventListener('error ', event_error, true);
+    xhttp.open(putInCache ? 'GET' : 'HEAD', path, true);
+    xhttp.send();
 }
