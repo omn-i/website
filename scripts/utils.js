@@ -256,13 +256,13 @@ function GetPngPathsFromDirectory(path_directory, callback, putInCache = false) 
 
 function GetPngPathsFromDirectory_intern(path_directory, callback, paths, index, putInCache) {
 	var xhttp = new XMLHttpRequest();
-	var removeEventListener, event_load, event_error;
+	var removeEventListener, event_readystatechange, event_error;
 	var path = path_directory + index.toString() + '.png';
 	removeEventListener = function() {
-		xhttp.removeEventListener('readystatechange', event_load, true);
+		xhttp.removeEventListener('readystatechange', event_readystatechange, true);
 		xhttp.removeEventListener('error', event_error, true);
 	};
-	event_load = function() {
+	event_readystatechange = function() {
 		if (xhttp.readyState === 4) {
 			removeEventListener();
 			if (xhttp.status === 200) {
@@ -278,7 +278,7 @@ function GetPngPathsFromDirectory_intern(path_directory, callback, paths, index,
 		removeEventListener();
 		callback(paths);
 	};
-	xhttp.addEventListener('readystatechange', event_load, true);
+	xhttp.addEventListener('readystatechange', event_readystatechange, true);
 	xhttp.addEventListener('error ', event_error, true);
     xhttp.open(putInCache ? 'GET' : 'HEAD', path, true);
     xhttp.send();
