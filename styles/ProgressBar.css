@@ -35,7 +35,7 @@
 	height: 100%;
 	background-color: #a7c1cf;
 	background-repeat: repeat;
-    background-size: contain;
+	background-size: contain;
 }
 
 .ProgressBar, .ProgressBar_bar {
