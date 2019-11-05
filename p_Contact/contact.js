@@ -10,18 +10,18 @@ document.addEventListener('DOMContentLoaded', function(event) {
 
 	social = socialManager.getByElement(document.getElementById('Social_gmail'));
 	social.setTitre('GMAIL');
-	social.setIcone('/skoma/images/gmail.png');
+	social.setIcone('/images/gmail.png');
 	social.setAffichage('lucas.dujardin15@gmail.com');
 
 	social = socialManager.getByElement(document.getElementById('Social_protonmail'));
 	social.setTitre('PROTONMAIL');
-	social.setIcone('/skoma/images/protonmail.png');
+	social.setIcone('/images/protonmail.png');
 	social.setAffichage('lucas.dujardin@protonmail.com');
 
 	social = socialManager.getByElement(document.getElementById('Social_github'));
 	social.setTitre('GITHUB');
-	social.setIcone('/skoma/images/github.png');
-	social.setLien('https://github.com/omn-i/website');
+	social.setIcone('/images/github.png');
+	social.setLien('https://github.com/omn-i');
 });
 
 

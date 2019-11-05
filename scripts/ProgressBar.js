@@ -1,4 +1,4 @@
-const URL_IMAGE_DECOUPE = '/skoma/images/decoupe.png';
+const URL_IMAGE_DECOUPE = '/images/decoupe.png';
 const NB_UNITE_DIFFERENCE_DECOUPE = 35;
 
 class ProgressBarManager {

@@ -4,11 +4,11 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width">
 		<title>Skoma</title>
-		<link rel="stylesheet" type="text/css" href="/skoma/styles/calque.css">
+		<link rel="stylesheet" type="text/css" href="/styles/calque.css">
 		<link rel="stylesheet" type="text/css" href="contact.css">
-		<script src="/skoma/scripts/utils.js"></script>
+		<script src="/scripts/utils.js"></script>
 		<script src="contact.js"></script>
-		<!--<link rel="icon" type="image/png" href="/skoma/images/favicon.png" />-->
+		<!--<link rel="icon" type="image/png" href="/images/favicon.png" />-->
 	</head>
 	<body class="body_clean">
 		<div class="scroll_snap">

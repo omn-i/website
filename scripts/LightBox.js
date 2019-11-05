@@ -1,4 +1,4 @@
-const URL_IMAGE_CROIX = '/skoma/images/croix.png';
+const URL_IMAGE_CROIX = '/images/croix.png';
 
 class LightBoxManager {
 	#list = null;
