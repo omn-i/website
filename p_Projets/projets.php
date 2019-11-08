@@ -7,12 +7,12 @@
 		<link rel="stylesheet" type="text/css" href="/styles/calque.css">
 		<link rel="stylesheet" type="text/css" href="/styles/ProgressBar.css">
 		<link rel="stylesheet" type="text/css" href="/styles/LightBox.css">
-		<link rel="stylesheet" type="text/css" href="projets.css">
+		<link rel="stylesheet" type="text/css" href="/p_Projets/projets.css">
 		<script src="/scripts/ResizeSensor.js"></script>
 		<script src="/scripts/utils.js"></script>
 		<script src="/scripts/ProgressBar.js"></script>
 		<script src="/scripts/LightBox.js"></script>
-		<script src="projets.js"></script>
+		<script src="/p_Projets/projets.js"></script>
 		<!--<link rel="icon" type="image/png" href="/images/favicon.png" />-->
 	</head>
 	<body>

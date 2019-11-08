@@ -5,9 +5,9 @@
 		<meta name="viewport" content="width=device-width">
 		<title>Skoma</title>
 		<link rel="stylesheet" type="text/css" href="/styles/calque.css">
-		<link rel="stylesheet" type="text/css" href="acceuil.css">
+		<link rel="stylesheet" type="text/css" href="/p_Acceuil/acceuil.css">
 		<script src="/scripts/utils.js"></script>
-		<script src="acceuil.js"></script>
+		<script src="/p_Acceuil/acceuil.js"></script>
 		<!--<link rel="icon" type="image/png" href="/images/favicon.png" />-->
 	</head>
 	<body class="body_clean">
@@ -28,7 +28,7 @@
 					</div>
 					<div id="conteneur_boutons_menu">
 						<button onclick="onclick_button_acceuil()">Acceuil</button>
-						<a class="nav_item" href="/p_Projets/projets.php"><button>Projets</button></a>
+						<a class="nav_item" href="/Projets"><button>Projets</button></a>
 					</div>
 				</div>
 			</div>
