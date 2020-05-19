@@ -37,7 +37,7 @@
 						<ul class="problemes_tab">
 							<li>Durée comprise entre ~0 et 2s pour que l'UI prenne en compte les actions en relation avec le serveur.</li>
 							<li>Réaction indésirable avec les objets imbriqués dans d'autres lors de leur modification ou de leur suppresion.</li>
-							<li>Quantité de code nécessaire non négligeable. <i>(avoir une seule déclaration de classe pour toutes plateformes et langages confondues possible ? en troisième version ?)</i></li>
+							<li>Quantité de code nécessaire non négligeable. <i>(envisager une déclaration unique des classes pour les différentes plateformes et les différents langages)</i></li>
 						</ul>
 					</div>
 					<p class="demo_titre">Démonstration</p>
