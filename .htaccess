@@ -1,7 +1,7 @@
 RewriteEngine on
-RewriteRule ^acceuil$ p_Acceuil/acceuil.php [L]
-RewriteRule ^projets$ p_Projets/projets.php [L]
-RewriteRule ^contact$ p_Contact/contact.php [L]
+RewriteRule ^acceuil$ /p_Acceuil/acceuil.php [L]
+RewriteRule ^projets$ /p_Projets/projets.php [L]
+RewriteRule ^contact$ /p_Contact/contact.php [L]
 
 <Files .*>
 	Require all denied
