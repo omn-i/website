@@ -28,7 +28,7 @@
 					</div>
 					<div id="conteneur_boutons_menu">
 						<button onclick="onclick_button_acceuil()">Acceuil</button>
-						<a class="nav_item" href="/projets/"><button>Projets</button></a>
+						<a class="nav_item" href="/projets"><button>Projets</button></a>
 					</div>
 				</div>
 			</div>
